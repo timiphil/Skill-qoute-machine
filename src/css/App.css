@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+}
+.App #quote-box {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  padding: 25px;
+}
+.App #quote-box #author {
+  text-align: end;
+  margin-top: 0;
+}
+.App #quote-box .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 50px;
+}
+.App #quote-box .buttons #tweet-quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.App #quote-box #new-quote {
+  display: inline-block;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.App .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .buttons #new-quote {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+}
