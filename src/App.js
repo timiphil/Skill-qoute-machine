@@ -22,7 +22,7 @@ function App() {
 
   useEffect(()=> {
     fetchQuotes(quoteDBUrl)
-  }, [quoteDBUrl])
+  }, [])
 
   const getRandomQuote = () => {
     let randInteger = Math.floor(quotesArray.length * Math.random())
